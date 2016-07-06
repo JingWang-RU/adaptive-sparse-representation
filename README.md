@@ -1,5 +1,7 @@
 # adaptive-sparserepresentation
 Adaptive Sparse Representation based Classification
+
+
 Created by Canyi Lu (canyilu@gmail.com) and Jing Wang (jw998@rutgers.edu)
 
 reference
