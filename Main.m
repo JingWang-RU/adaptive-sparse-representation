@@ -13,9 +13,8 @@ fprintf( [ mfilename(currentpath) ' is going, please wait...\n' ] ) ;
 
 %% data set
 Data = 'AR' ;                       % AR 100 classes each with about 14 samples
-% Data = 'Yale' ;                        % Yale 15 classes each with 11 samples
+% Data = 'Yale' ;                   % Yale 15 classes each with 11 samples
 % Data = 'ORL' ;                    % ORL 40 classes each with 10 sampless
-% Data = 'UMIST' ;                 % UMIST 20 classes each with about 29 samples (575 in sum)
 % Data = 'YaleB' ;                  % YaleB 38 classes each with about 64 samples
 
 % dimention reduction methods
@@ -27,18 +26,16 @@ dr_method = 'PCA' ;
 
 %% classifier
 Classifier = 'TLC' ;
-% Classifier = 'SRC_SPAMS' ;     % SRC (L1)
-%  Classifier = 'kNN' ;              % kNN
-%  Classifier = 'NFS' ;              % NFS
-% Classifier = 'OrthonormalL2' ;    % L2
+% Classifier = 'SRC_SPAMS' ;       % SRC (L1)
+% Classifier = 'kNN' ;             % kNN
+% Classifier = 'NFS' ;             % NFS
+% Classifier = 'OrthonormalL2' ;   % CRC(L2)
 % Classifier = 'libsvm_test' ;
-%  Classifier = 'BSSC';
-% Classifier = 'WSRC_SPAMS';
+
 
 tic;
-% KNN NFS LR
 %% repeat the experiments setting
-splits = 1 ; % can be tuned
+splits = 10 ; 
 %  number of training samples per class
 train_num = 4;
 switch Data
@@ -60,15 +57,7 @@ switch Data
         D = [ 30 50 80 150 199] ;              % train_num=5
         if strcmp( dr_method , 'LDA' )
             D = [ 5 10 20 25 30 35 39] ;
-        end
-    case 'UMIST'
-        Train = train_num:train_num;
-        D = [30 50 70 90 110 ] ;              % train_num=6
-        %     D = [ 30 80 130 180 237] ;          % train_num=12
-        
-        if strcmp( dr_method , 'LDA' )
-            D = [ 3:4:19] ;
-        end
+        end   
     case 'YaleB'
         Train = train_num : train_num ;
         D = [ 30 56 120 504] ;% train_num=30/1024
