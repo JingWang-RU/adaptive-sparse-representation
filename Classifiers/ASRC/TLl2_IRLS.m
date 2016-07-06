@@ -1,6 +1,6 @@
 function Coeff = TLl2_IRLS( X_Tst , X_Trn , lambda , display  )
 
-% Reference: Wang, Jing and Lu, Canyi and Wang, Meng and Li, Peipei and Yan, Shuicheng and Hu, Xuegang, "Robust Face Recognition via Adaptive Sparse Representation,"
+% Reference: Jing Wang, Canyi Lu, et al., "Robust Face Recognition via Adaptive Sparse Representation,"
 % IEEE Transactions on System, Man and Cybernetics-Part B, 2014.
 % Created by Canyi Lu (canyilu@gmail.com) and Jing Wang (jw998@rutgers.edu).
 % Please cite our paper if you use the code, thank you.
@@ -64,13 +64,7 @@ for i = 1 : num_Tst
         end
         z_old = z ;
     end
-    Coeff(:,i) = z ;
-    
-    %     plot(obj)
-    %     min(obj)
-    %     disp( ['minobj=' num2str(obj(end)) ] ) ;
-    %     pause
-    
+    Coeff(:,i) = z ;    
 end
 
 

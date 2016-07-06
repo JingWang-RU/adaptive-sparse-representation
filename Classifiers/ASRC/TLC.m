@@ -1,6 +1,6 @@
 function [rate predictlabel] = TLC( trnX, trnY, tstX, tstY )
 
- % Reference: Jing Wang, Canyi Lu, Meng Wang, Peipei Li, Shuicheng Yan and Xuegang Hu, "Robust Face Recognition via Adaptive Sparse Representation,"
+% Reference: Jing Wang, Canyi Lu, et al., "Robust Face Recognition via Adaptive Sparse Representation,"
 % IEEE Transactions on System, Man and Cybernetics-Part B, 2014.
 % Created by Canyi Lu (canyilu@gmail.com) and Jing Wang (jw998@rutgers.edu).
 % Please cite our paper if you use the code, thank you.
