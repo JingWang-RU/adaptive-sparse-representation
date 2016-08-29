@@ -28,9 +28,9 @@ end
 
 
 para = 0.001 ; % can be adjusted
-
+% choose optimization solution
 A = TLl2_IRLS( tstX , trnX , para ) ;
-
+%A = TLl2_adm( tstX , trnX , para ) ;% ADMM
 % residual plan A: similar to SRC
 % [rate predictlabel] = Decision_Residual( trnX ,trnY ,tstX , tstY , A ) ;
 [rate predictlabel] = Decision_Coeff( trnX ,trnY ,tstX , tstY , A ) ;%
