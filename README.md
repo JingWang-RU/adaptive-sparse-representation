@@ -22,15 +22,10 @@ Jing Wang (jw998@rutgers.edu) and Canyi Lu (canyilu@gmail.com)
 ```
 ## Contents
 
-### Data sets
-
-* AR
-* ORL
-* Yale
-* UCI
-### Comparative methods: kNN   NFS   SRC   ASRC
-### Dimension Reduction methods: LDA   PCA   Identity
-### Data Preprocessing
+* Data sets: AR, ORL, Yale, UCI
+* Comparative methods: kNN, NFS, SRC, ASRC
+* Dimension Reduction methods: LDA, PCA, Identity
+* Data Preprocessing
 
 ## How to use
 
