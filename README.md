@@ -29,7 +29,7 @@ Jing Wang (jw998@rutgers.edu) and Canyi Lu (canyilu@gmail.com)
 
 ## How to use
 
-*Please call Main.m directly.
+* Please call Main.m directly.
 
 </content>
   <tabTrigger>readme</tabTrigger>
