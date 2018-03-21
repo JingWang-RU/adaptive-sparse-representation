@@ -4,14 +4,14 @@
 
 ## Contents
 
-* Data sets: AR, ORL, Yale, UCI
-* Comparative methods: kNN, NFS, SRC, ASRC
-* Dimension Reduction methods: LDA, PCA, Identity
-* Data Preprocessing
+* Data sets: AR, ORL, Yale, UCI,
+* Comparative methods: kNN, NFS, SRC, ASRC,
+* Dimension Reduction methods: LDA, PCA, Identity,
+* Data Preprocessing.
 
 ## How to use
 
-Choose the classifier and dimension reduction method by uncommenting  related lines in Main.m
+Choose the classifier and dimension reduction method by uncommenting  related lines in `Main.m`
 
 ```Shell
 # At the matlab prompt, run the script:
